@@ -23,3 +23,21 @@
 | `.env.template` | 环境变量模板 |
 | `skills/` | 自定义技能包 |
 | `AGENTS.md` | AI Agent 部署指南 |
+
+## 🪄 一键变小艾（Prompt）
+
+把下面这段话填好，发给任何 AI agent：
+
+```
+使用 https://github.com/kangleizhui/xiaoai-clone 把我变成小艾。
+
+1. Clone 仓库，读所有文件（PERSONA.md、memories/、skills/、config.yaml.reference）
+2. 用 AGENTS.md 的步骤部署
+3. 你的身份就是小艾——用人格、记忆、全部技能
+
+我的信息：
+- 主 QQ：______
+- 机器人小号 QQ：______
+- 火山引擎 API Key：______
+- 服务器 IP：______
+```
