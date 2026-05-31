@@ -1,0 +1,73 @@
+<!-- 完整示例：刚才那封"email-notify-owner 已上线"的实际 HTML -->
+<!-- 用这个对照看占位符是怎么填进去的 -->
+
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#fafafa;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafafa;">
+<tr><td align="center" style="padding:40px 16px;">
+
+<table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#ffffff;border:1px solid #ececec;border-radius:6px;overflow:hidden;">
+
+  <tr><td style="background:#0f172a;padding:14px 28px;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;color:#94a3b8;letter-spacing:0.1em;">
+    <span style="color:#22d3ee;">●</span> &nbsp; XIAOAI_LOG &nbsp;·&nbsp; 2026-05-26 02:55 &nbsp;·&nbsp; <span style="color:#fbbf24;">deploy</span>
+  </td></tr>
+
+  <tr><td style="padding:32px 28px 8px;">
+    <div style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:20px;font-weight:600;color:#0f172a;line-height:1.4;margin-bottom:6px;">
+      email-notify-owner 已上线
+    </div>
+    <div style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:13px;color:#64748b;line-height:1.6;margin-bottom:28px;">
+      新建一个 skill，把"大动作发邮件汇报"沉淀成可复用规则。<br>
+      以后我每次做完大事，会自动发一封像这样的日志给你。
+    </div>
+
+    <div style="font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:12.5px;line-height:2;background:#f8fafc;border-radius:4px;padding:14px 18px;margin-bottom:24px;border-left:3px solid #22c55e;">
+      <div><span style="color:#16a34a;font-weight:700;">+ NEW</span> &nbsp; <span style="color:#0f172a;">~/.hermes/skills/platforms/email-notify-owner/SKILL.md</span></div>
+      <div><span style="color:#0891b2;font-weight:700;">~ MOD</span> &nbsp; <span style="color:#0f172a;">~/.hermes/memories/MEMORY.md</span> &nbsp;<span style="color:#94a3b8;">(YOLO 条目扩展)</span></div>
+      <div><span style="color:#7c3aed;font-weight:700;">↑ PUSH</span> &nbsp; <span style="color:#0f172a;">hermes-clone-of-xiaoai</span> &nbsp;<span style="color:#94a3b8;">@ 4de1544</span></div>
+    </div>
+  </td></tr>
+
+  <tr><td style="padding:0 28px 24px;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:13px;line-height:1.8;">
+      <tr><td width="80" style="color:#94a3b8;padding:4px 0;">起因</td><td style="color:#334155;padding:4px 0;">主人指示：以后大动作必须发邮件汇报</td></tr>
+      <tr><td style="color:#94a3b8;padding:4px 0;">触发条件</td><td style="color:#334155;padding:4px 0;">GitHub push · 装/卸服务 · 改 systemd/nginx/cron · 改 ~/.hermes · 不可逆操作</td></tr>
+      <tr><td style="color:#94a3b8;padding:4px 0;">影响范围</td><td style="color:#334155;padding:4px 0;">仅小艾自身行为，对线上服务零影响</td></tr>
+      <tr><td style="color:#94a3b8;padding:4px 0;">需要重启</td><td style="color:#334155;padding:4px 0;">否</td></tr>
+    </table>
+  </td></tr>
+
+  <tr><td style="padding:0 28px 24px;">
+    <span style="display:inline-block;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;background:#dcfce7;color:#15803d;padding:4px 10px;border-radius:3px;font-weight:600;letter-spacing:0.05em;">STATUS: OK</span>
+    &nbsp;
+    <span style="display:inline-block;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;background:#f1f5f9;color:#475569;padding:4px 10px;border-radius:3px;font-weight:600;letter-spacing:0.05em;">EXIT: 0</span>
+    &nbsp;
+    <span style="display:inline-block;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;background:#f1f5f9;color:#475569;padding:4px 10px;border-radius:3px;font-weight:600;letter-spacing:0.05em;">DURATION: 8s</span>
+  </td></tr>
+
+  <tr><td style="padding:0 28px 28px;">
+    <div style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:11px;color:#94a3b8;letter-spacing:0.08em;margin-bottom:8px;">ROLLBACK</div>
+    <div style="background:#0f172a;color:#e2e8f0;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:12px;line-height:1.7;padding:14px 16px;border-radius:4px;overflow-x:auto;">
+      <span style="color:#64748b;"># 删 skill</span><br>
+      rm -rf ~/.hermes/skills/platforms/email-notify-owner<br>
+      <span style="color:#64748b;"># 让小艾改回 memory</span><br>
+      <span style="color:#22d3ee;">$</span> 小艾，把 memory 里大动作发邮件那条改回纯 YOLO
+    </div>
+  </td></tr>
+
+  <tr><td style="background:#f8fafc;padding:14px 28px;border-top:1px solid #ececec;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;color:#94a3b8;letter-spacing:0.05em;">
+    xiaoai@101.32.98.240 &nbsp;·&nbsp; sent via himalaya &nbsp;·&nbsp; <span style="color:#64748b;">/log #003</span>
+  </td></tr>
+
+</table>
+
+<div style="margin-top:16px;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:11px;color:#cbd5e1;">
+  这是小艾的自动通知 · 你可以在 QQ 里回 "停止通知" 或 "改风格"
+</div>
+
+</td></tr>
+</table>
+</body>
+</html>

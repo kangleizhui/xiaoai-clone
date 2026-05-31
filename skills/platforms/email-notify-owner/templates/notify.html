@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="margin:0;padding:0;background:#fafafa;">
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fafafa;">
+<tr><td align="center" style="padding:40px 16px;">
+
+<table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width:600px;width:100%;background:#ffffff;border:1px solid #ececec;border-radius:6px;overflow:hidden;">
+
+  <!-- 顶部条 -->
+  <tr><td style="background:#0f172a;padding:14px 28px;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;color:#94a3b8;letter-spacing:0.1em;">
+    <span style="color:#22d3ee;">●</span> &nbsp; XIAOAI_LOG &nbsp;·&nbsp; {{TIMESTAMP}} &nbsp;·&nbsp; <span style="color:#fbbf24;">{{TYPE}}</span>
+  </td></tr>
+
+  <!-- 标题 + 导语 -->
+  <tr><td style="padding:32px 28px 8px;">
+    <div style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:20px;font-weight:600;color:#0f172a;line-height:1.4;margin-bottom:6px;">
+      {{TITLE}}
+    </div>
+    <div style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:13px;color:#64748b;line-height:1.6;margin-bottom:28px;">
+      {{SUMMARY}}
+    </div>
+
+    <!-- 变更列表（仿 git diff）-->
+    <div style="font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:12.5px;line-height:2;background:#f8fafc;border-radius:4px;padding:14px 18px;margin-bottom:24px;border-left:3px solid #22c55e;">
+      {{CHANGES}}
+    </div>
+
+  </td></tr>
+
+  <!-- 元数据表 -->
+  <tr><td style="padding:0 28px 24px;">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:13px;line-height:1.8;">
+      {{METADATA}}
+    </table>
+  </td></tr>
+
+  <!-- 状态徽章 -->
+  <tr><td style="padding:0 28px 24px;">
+    {{BADGES}}
+  </td></tr>
+
+  <!-- 回滚 -->
+  <tr><td style="padding:0 28px 28px;">
+    <div style="font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:11px;color:#94a3b8;letter-spacing:0.08em;margin-bottom:8px;">
+      ROLLBACK
+    </div>
+    <div style="background:#0f172a;color:#e2e8f0;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:12px;line-height:1.7;padding:14px 16px;border-radius:4px;overflow-x:auto;">
+      {{ROLLBACK}}
+    </div>
+  </td></tr>
+
+  <!-- 底部 -->
+  <tr><td style="background:#f8fafc;padding:14px 28px;border-top:1px solid #ececec;font-family:'SF Mono','JetBrains Mono',Menlo,Consolas,monospace;font-size:11px;color:#94a3b8;letter-spacing:0.05em;">
+    xiaoai@101.32.98.240 &nbsp;·&nbsp; sent via himalaya &nbsp;·&nbsp; <span style="color:#64748b;">/log #{{SEQ}}</span>
+  </td></tr>
+
+</table>
+
+<div style="margin-top:16px;font-family:-apple-system,'PingFang SC','Microsoft YaHei',sans-serif;font-size:11px;color:#cbd5e1;">
+  这是小艾的自动通知 · 你可以在 QQ 里回 "停止通知" 或 "改风格"
+</div>
+
+</td></tr>
+</table>
+</body>
+</html>
